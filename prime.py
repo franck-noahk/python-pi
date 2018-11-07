@@ -1,21 +1,16 @@
 mynum = 2
 mynum2 = 2
-testing_number = 4
+testing_number = int(2)
 is_prime = True
+my_list = [2,3]
 while True:
-    while mynum < testing_number:
-        mynum2 = 2
-        while mynum2 < (testing_number // 2) + 1:
-            if mynum2 % testing_number == 0:
-                is_prime = False
-                break
-            if mynum * mynum2 == testing_number:
-                is_prime = False
-            mynum2 = mynum2 + 1
-        mynum = mynum + 1
+    for i in my_list:
+        if testing_number % i == 0:
+            is_prime = False
+            break
     if is_prime == True:
         print(testing_number)
-        
+        my_list.append(testing_number)
     else: 
         is_prime = True
     testing_number = testing_number + 1
