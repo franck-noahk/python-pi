@@ -10,6 +10,7 @@ while True:
             break
     if is_prime == True:
         print(testing_number)
+        print("")
         my_list.append(testing_number)
     else: 
         is_prime = True
