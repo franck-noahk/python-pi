@@ -1,2 +1,2 @@
-file = open("distance.txt","r")
+File = open("distance.txt","r")
 
